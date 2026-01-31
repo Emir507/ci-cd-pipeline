@@ -11,4 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     container: node:20-alpine
     steps:
-      - run: echo "CI is running"
+      - uses: action/checkout@v4
+
+      - name: Show codebase
+        run: ls
