@@ -10,3 +10,5 @@ jobs:
   build:
     runs-on: ubuntu-latest
     container: node:20-alpine
+    steps:
+      - run: echo "CI is running"
